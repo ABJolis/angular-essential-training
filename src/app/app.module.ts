@@ -6,8 +6,12 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule
   ], // <- metadata property used to bring in other angular modules that our module will need
-  declarations: [], // <- property used to make components, directives and pipes available to our module, that don't come from another module
-  bootstrap: [] // <-- used for a root module, and lets angular know which component or components will be the starting point for the bootstrap process - basically, the entry point for the bootstrap process
+  declarations: [
+    AppComponent
+  ], // <- property used to make components, directives and pipes available to our module, that don't come from another module
+  bootstrap: [
+    AppComponent
+  ] // <-- used for a root module, and lets angular know which component or components will be the starting point for the bootstrap process - basically, the entry point for the bootstrap process
 })
 export class AppModule {}
 
